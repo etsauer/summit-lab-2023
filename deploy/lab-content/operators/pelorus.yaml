@@ -4,7 +4,7 @@ metadata:
   labels:
     operators.coreos.com/devspaces.openshift-operators: ""
   name: pelorus
-  namespace: openshift-operators
+  namespace: pelorus
 spec:
   channel: alpha
   installPlanApproval: Automatic
