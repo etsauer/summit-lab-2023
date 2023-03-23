@@ -3,7 +3,7 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-5"
-  name: operators
+  name: devspaces
   namespace: openshift-gitops
 spec:
   destination:
@@ -11,11 +11,11 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    directory:
-      recurse: true
-    path: deploy/lab-content/operators
-    repoURL: https://github.com/rht-labs-events/summit-lab-2023.git
-    targetRevision: main
+    path: deploy/lab-content/operators/devspaces
+    # repoURL: https://github.com/rht-labs-events/summit-lab-2023.git
+    # targetRevision: main
+    repoURL: https://github.com/etsauer/summit-lab-2023.git
+    targetRevision: add-pelorus
   syncPolicy:
     automated:
       prune: true
