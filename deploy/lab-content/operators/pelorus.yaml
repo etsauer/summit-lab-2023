@@ -6,7 +6,7 @@ metadata:
   name: pelorus
   namespace: openshift-operators
 spec:
-  channel: stable
+  channel: alpha
   installPlanApproval: Automatic
   name: pelorus-operator
   source: community-operators
