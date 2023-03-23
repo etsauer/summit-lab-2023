@@ -1,0 +1,14 @@
+kind: Subscription
+apiVersion: operators.coreos.com/v1alpha1
+metadata:
+  labels:
+    operators.coreos.com/devspaces.openshift-operators: ""
+  name: pelorus
+  namespace: openshift-operators
+spec:
+  channel: stable
+  installPlanApproval: Automatic
+  name: pelorus-operator
+  source: community-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: pelorus-operator.v0.0.5

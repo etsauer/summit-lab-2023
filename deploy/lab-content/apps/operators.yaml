@@ -3,7 +3,7 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-5"
-  name: devspaces
+  name: operators
   namespace: openshift-gitops
 spec:
   destination:
